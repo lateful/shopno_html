@@ -1,5 +1,7 @@
 # shopno_html
 
-##### npm i - install node_modules
+##### npm i
 
-##### gulp - start project
+##### gulp 
+
+[пример](http://example.com/ "Необязательная подсказка")
