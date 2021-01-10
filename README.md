@@ -1,7 +1,7 @@
 # shopno_html
 
-##### npm i
+##### npm i | устанавливаем модули node
 
-##### gulp 
+##### gulp | запускаем gulp
 
-[пример](http://example.com/ "Необязательная подсказка")
+[Страница с результатом](http://artemarara.beget.tech/shopno/)
