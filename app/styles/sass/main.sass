@@ -1,0 +1,284 @@
+@import config
+
+.header
+	background: #eff0f2
+	padding-top: 65px
+	height: 800px
+
+.juice
+	position: absolute
+	right: 90px
+	margin-top: 30px
+
+h1
+	margin-top: 190px
+	margin-bottom: 135px
+	font-family: montserrat
+	font-weight: 700
+	color: #505050
+	text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24)
+	font-size: 45px
+	line-height: 60px
+	text-transform: uppercase
+	text-align: center
+	position: relative
+	letter-spacing: -1px
+	.item
+		background-color: rgba(118, 244, 234, 0.5)
+		padding: 5px 7px
+
+.header-btn
+	width: 232px
+	height: 53px
+	border-radius: 2px
+	border: 2px solid rgba(0, 0,.0, 0.5)
+	text-align: center
+	line-height: 53px
+	margin: 0 auto
+	transition: 0.7s
+	&:hover
+		background: #000000
+		transition: 0.7s
+		a
+			color: white
+	a
+		font-family: montserrat
+		color: #3c3c3c
+		font-size: 18px
+		font-weight: 400
+		text-transform: uppercase
+		text-decoration: none
+		letter-spacing: 2.16px
+		display: block
+
+.about
+	background-color: #f8fafa
+	height: 985px
+	width: 100%
+	padding-top: 129px
+	h3
+		padding-bottom: 147px
+
+.about-poster
+	text-align: center
+	img
+		box-shadow: 0 0 30px rgba(20, 20, 21, 0.13)
+
+.about-content
+	width: 474px
+	margin: 0 auto
+	p
+		color: rgba(0, 0, 0, 0.74)
+		margin-bottom: 30px
+		letter-spacing: 0.8px
+
+.works
+	padding-top: 129px
+	padding-bottom: 92px
+
+.works-flex
+	margin-top: 114px
+	display: inline-flex
+	flex-wrap: wrap
+	justify-content: center
+	&_item
+		width: 363px
+		margin: 0px 0px 10px 0px
+		&:nth-of-type(2), &:nth-of-type(5)
+			margin: 0px 10px 10px 10px
+		img
+			width: 100%
+
+.team
+	background-color: #f9fbfb
+	padding-top: 99px
+	padding-bottom: 170px
+
+.team-flex
+	@extend .works-flex
+	&_item
+		@extend .works-flex_item
+		position: relative
+		cursor: pointer
+		&:hover
+			.description
+				display: block
+		.description
+			width: 335px
+			height: 241px
+			box-shadow: 3px 6px 16px rgba(20, 20, 21, 0.18)
+			background-color: $accent
+			position: absolute
+			z-index: 1
+			bottom: 15px
+			left: 50%
+			transform: translateX(-50%)
+			padding: 26px 55px 0px 38px
+			display: none
+			&::before
+				content: ""
+				width: 42px
+				height: 37px
+				background-image: url(../images/dist/snape.png)
+				display: block
+				position: absolute
+				top: -18px
+				left: 11px
+			.name
+				color: #272727
+				font-family: merriweather
+				font-size: 20px
+				font-weight: 700
+				letter-spacing: 1px
+				text-transform: uppercase
+			.post
+				font-family: merriweather
+				font-weight: 400
+				font-style: italic
+				color: #767070
+				font-size: 15px
+			p
+				color: rgba(0, 0, 0, 0.8)
+				font-size: 16px
+				letter-spacing: 0.16px
+				padding-top: 20px
+				padding-bottom: 30px
+			ul
+				li
+					display: inline-block
+					letter-spacing: 8px
+				a
+					color: rgba(0, 0, 0, 0.7)
+					font-size: 14px
+					text-decoration: none
+					&:hover
+						color: rgba(0, 0, 0, 0.4)
+
+.contacts
+	background-image: url(../images/dist/contact-bg.png)
+	background-size: cover
+	background-repeat: no-repeat
+	padding-top: 120px
+	padding-bottom: 120px
+	&-info
+		width: 490px
+		padding-bottom: 19px
+		padding-left: 22px
+		padding-right: 22px
+		padding-top: 36px
+		box-shadow: 0 0 30px rgba(21, 21, 21, 0.12)
+		background-color: rgba(2, 22, 35, 0.74)
+		float: left
+		font-size: 15px
+		color: rgba(255, 255, 255, 0.7)
+		.map
+			width: 446px
+			height: 224px
+			margin-top: 23px
+	&-form
+		width: 593px
+		box-shadow: 0 0 30px rgba(21, 21, 21, 0.12)
+		background-color: rgba(2, 22, 35, 0.74)
+		padding: 31px 38px
+		float: left
+		margin-right: 27px
+		input 
+			height: 45px
+			border: none
+			background: none
+			border-bottom: 1px solid rgba(255, 255, 255, 0.6)
+			display: block
+			width: 100%
+			margin-bottom: 15px
+		textarea
+			display: block
+			background: none
+			border: none
+			border-bottom: 1px solid rgba(255, 255, 255, 0.6)
+			color: rgba(255, 255, 255, 0.6)
+			font-size: 15px
+			resize: none
+			width: 100%
+			height: 168px
+		button
+			width: 244px
+			height: 53px
+			border-radius: 2px
+			background-color: #6eeee4
+			border: none
+			font-family: montserrat
+			font-size: 18px
+			text-transform: uppercase
+			color: rgba(0, 0, 0, 0.7)
+			font-weight: 700
+			letter-spacing: 2.16px
+			margin-top: 35px
+			transition: 0.7s
+			&:hover
+				background: none
+				color: #6eeee4
+				border: 2px solid #6eeee4
+				transition: 0.7s
+
+
+footer
+	padding-top: 93px
+	padding-bottom: 152px
+	background: #262b2e
+	text-transform: uppercase
+	color: rgba(255, 255, 255, 0.8)
+	text-align: center
+	ul
+		margin-top: 15px
+	li
+		display: inline-block
+		width: 46px
+		height: 40px
+		background-color: rgba(138, 138, 138, 0.4)
+		text-align: center
+		line-height: 40px
+		margin-right: 2px
+		transition: 0.7s
+		&:hover
+			background-color: $accent
+			transition: 0.7s
+		a
+			display: block
+			font-size: 20px
+			letter-spacing: 0.2px
+			color: #faf4f4
+			&:hover
+				color: rgba(0, 0, 0, 0.95)
+
+h2
+	font-family: montserrat
+	font-weight: 700
+	font-size: 38px
+	color: rgba(0, 0, 0, 0.9)
+	line-height: $lineheight
+	text-transform: uppercase
+	text-align: center
+	padding-bottom: 17px
+	letter-spacing: 2.28px
+
+h3
+	font-family: merriweather
+	font-size: 18px
+	font-weight: 400
+	text-transform: uppercase
+	text-align: center
+	color: rgba(0, 0, 0, 0.62)
+	line-height: $lineheight
+	letter-spacing: 1.08px
+
+h4
+	font-family: merriweather
+	color: rgba(0, 0, 0, 0.75)
+	font-size: 20px
+	font-weight: 700
+	line-height: $lineheight
+	text-transform: uppercase
+	margin-bottom: 20px
+	letter-spacing: 1.2px
+
+@import "blocks/_media.sass"
